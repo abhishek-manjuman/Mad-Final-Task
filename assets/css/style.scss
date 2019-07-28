@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800|PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap&subset=latin-ext');
+
+
+// font-family: 'PT Serif', serif;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Sacramento', cursive;
+
+
+$primary-color : #8f3cec;
+$primary-color-op : #8f3cecbd;
+$primary-bg-color:#ffffff;
+$secondary-b-color: #e6e6e63d;
+$secondary-bg-color: #e6e6e6;
+$primary-text-color:#000000;
+$secondary-text-color: #777777;
+$primary-shedow: 0 8px 25px rgba(0, 0, 0, 0.16);
+
+// =============== common Css =================
+html{
+    font-size: 10px;
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    a{
+        color: $primary-bg-color;
+        text-decoration: none;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+.divider{
+    width: 100%;
+    height: 1px;
+    margin: 2rem 0;
+    background-color: $secondary-text-color;
+}
+.error,.pinerror,.perror,.lerror,.ferror{
+    color: #ff0000;
+}
+// ================= Header  =====================
+header{
+    box-shadow: $primary-shedow;
+.header-top-strip{
+    background-color: $primary-color;
+    .nav{
+        img{
+            width: 1rem;
+        }
+        a{
+            font-size: 10px;
+        }
+    }
+}
+.header-main-strip{
+    background-color: $primary-bg-color;
+    a{
+        color: $primary-color;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    .nav-logo{
+        img{
+            width: 20rem;
+        }
+    }
+    
+    .nav-menu .nav-item {
+        border-top: 1rem solid $primary-bg-color;
+        border-bottom: 1rem solid $primary-bg-color;
+        transition: border .3s ease-in-out;
+
+        img{
+            width: 1.4rem;
+        }
+
+        &:hover{
+            border-bottom-color: $primary-color;
+        }
+    }
+    .hide-section-menu-icon{
+        display: none;
+        img{
+            width: 18px;
+        }
+    }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    background-color: $primary-color;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 2.5rem;
+        color: $primary-bg-color;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+  }
+
+}
+// ===================== Main Section ====================
+
+// --------------------- Banner --------------------------
+main{ 
+    margin-top: 11.7rem;
+.banner-section{
+    background-color: $secondary-bg-color;
+    .banner{
+        position: relative;
+        background-color: $secondary-bg-color;
+    .banner-caption{
+        position: absolute;
+        top: 0;
+        left: 10rem;
+        width: 56rem;
+        .banner-caption-heading{
+            margin-top: 7rem;
+            h1{
+                font-family: 'PT Serif', serif;
+                font-size: 7.2rem;
+                font-weight: bold;
+                color: $primary-text-color;
+            }
+        }
+        .divider{
+            width: 45%;
+            margin: 3rem 0;
+            height: .2rem;
+        }
+        .banner-caption-text{
+            p{
+                font-family: 'PT Serif', serif;
+                font-size: 3rem;
+                font-style: italic;
+                color: $secondary-text-color;
+                line-height: 1.2;
+            }
+        }
+
+    }
+    
+}
+}
+// ========================= Banner Cards ====================
+.card-panel{
+    position: absolute;
+    top: 55rem;
+    left: 10rem;
+    z-index: 1;
+}
+.card{
+    box-shadow: $primary-shedow;
+    .card-body{
+        padding: 25px;
+
+        .subtitle-top{
+            color: $secondary-bg-color;
+            font-style: italic;
+            img{
+                width: 10px;
+                float: right;
+                opacity: .5;
+            }
+        }
+        .card-title{
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+        .card-title-l{
+            margin-top: 20px;
+            font-size: 3.6rem;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .subtitle-bottom{
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .divider{
+            width: 40%;
+            margin: 3rem 0;
+            background-color: $primary-color;
+            height: 2px;
+        }
+        .card-text{
+            font-size: 16px;
+            font-weight: bold;
+            color: $secondary-text-color;
+        }
+        .card-link.btn-link{
+            background-color: $primary-color;
+            color: $primary-bg-color;
+            &:hover{
+                background-color: $primary-color-op;
+            }
+        }
+        .card-link-l1{
+            border: 2px solid $primary-color;
+            background: $primary-bg-color;
+            color: $primary-color;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 4rem;
+            transition: all .5s ease-in-out;
+
+            &:hover{
+                background-color: $primary-color;
+                color: $primary-bg-color;
+            }
+        }
+        .card-link+.card-link {
+            margin-left: 0;
+        }
+
+        .card-link-l2{
+            background: $primary-bg-color;
+            color: $primary-color;
+            font-size: 1.8rem;
+            text-decoration: underline;
+            &:hover{
+                font-weight: bold;
+            }
+        }
+    }
+}
+// ============================ About Section ============================== 
+.about-section{
+    margin-top: 18rem;
+    article{
+        h2{
+            font-family: 'PT Serif', serif;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        p{
+            font-size: 1.6rem;
+            color: $secondary-text-color;
+        }
+        .card-link{
+            margin-top: 2.6rem;
+            background-color: $primary-color;
+        }
+    }
+}
+// ========================== Interest Section ===================
+.interest-section{
+    background: linear-gradient(171deg, #e6e6e63d 65%, #fff 20%);
+    padding-bottom: 10rem;
+    .intrest{
+        h2{
+            font-family: 'PT Serif', serif;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .card{
+            width: 100%;
+            height: auto;
+            padding: 5rem 6rem;
+            img{
+                margin: 0 auto;
+                width: 50%;
+                height: 20%;
+            }
+            h3{
+                text-align: center;
+                font-weight: bold;
+                margin-top: 1rem;
+                color: $secondary-text-color;
+            }
+        }
+
+    }
+}
+// ============================== Latest course section ===============
+.latest-course-heading{
+    h2{
+        font-family: 'PT Serif', serif;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+}
+.latest-courses{
+    .card{
+        box-shadow: none;
+        border: 0;
+        
+        .card-body{
+            .card-head{
+                p{
+                    font-size: 10px;
+                    color: $secondary-text-color;
+                    img{
+                        width: 10px;
+                    }
+                }
+                h4{
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                .price{
+
+                    text-align: right;
+                    h2{
+                        color: $primary-color;
+                        font-weight: bold;
+                    }
+                    img{
+                        width: 60px;
+                    }
+                }
+            }
+        }
+        .card-content{
+            color: $secondary-text-color;
+            font-size: 1.6rem;
+            text-justify: auto;
+        }
+        button{
+            background-color: $primary-color;
+            color: $primary-bg-color;
+            font-size: 1.6rem;
+            border-radius: 0;
+        }
+
+        &:hover{
+            box-shadow: $primary-shedow;
+        }
+    }
+}
+// ========================== Our Achivment =======================
+.our-achivment-section{
+    background: linear-gradient(175deg, #e6e6e63d 59%, #fff 20%);
+    &::after{
+        background-color: $secondary-bg-color;
+        height: 100px;
+        width: 100%;
+    }
+    .our-achivment-heading{
+        padding-bottom: 3rem;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .achivment-card{
+        h2{
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+        p{
+            font-size: 1.8rem;
+            color: $secondary-text-color;
+            font-weight: bold;
+        }
+    }
+    .divider{
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+        width: 30%;
+    }
+    .achivment-text{
+        p{
+            font-size: 1.6rem;
+            color: $secondary-text-color;
+        }
+        h2{
+            position: absolute;
+            top: 45%;
+            left: 42%;
+            color: $primary-bg-color;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    }
+}
+// ============================ Live Classess =====================
+.live-class-section{
+    background-color: $secondary-b-color;
+
+    .row{
+        .live-class{
+            button{
+                background-color: $primary-color;
+                color: $primary-bg-color;
+                font-size: 1.6rem;
+                margin-top: 9rem;
+            }
+        }
+        .live-class-carousel{
+            .btn{
+                background-color: $primary-color;
+                color: $primary-bg-color;
+                font-weight: bolder;
+            }
+        }
+        h6{
+            font-size: 1.6rem;
+            color: $secondary-text-color;
+        }
+        h2{
+            font-weight: bold;
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.6rem;
+            color: $secondary-text-color;
+        }
+    }
+}
+
+// =============================== Gallary Section =======================
+
+.container-full{
+    width:100%;
+    display: flex;
+    .row-full{
+        width:100%;
+        display: flex;
+    }
+    .collum{
+        // display: flex;
+        width:50%;
+        img{
+            opacity: 0.6;
+            transition: all .6s ease-in-out;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+//=================================== News Section ===================
+.news-section{
+    button{
+        background-color: $primary-color;
+        color: $primary-bg-color;
+        font-size: 1.6rem;
+    }
+.news-portal{
+    label{
+        color: #dcdcdc;
+        font-size: 12px;
+    }
+    .card{
+        box-shadow: $primary-shedow;
+    }
+    .card-body{
+    .card-content{
+        margin-top: 5px;
+    }
+    a{
+        color: $primary-color;
+        font-size: 12px;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+}
+}
+
+// ================================ Modal Section =========================
+.modal{
+    .modal-header{
+        border: 0;
+    }
+    #btn-submit{
+        background-color: $primary-color;
+        color: $primary-bg-color;
+        font-size: 16px;
+    }
+
+    
+    .table {
+        th,td{
+            width: 25%;
+        }
+    }
+    
+
+}
+
+}
+// ========================== footer Section ====================
+footer{
+    background-color: $primary-text-color;
+    color: $secondary-b-color;
+    .row{
+        .footer-signup-text,h3{
+            color: $primary-bg-color;
+            font-size: 16px;
+            span{
+                color: $secondary-b-color;
+                font-size: 16px;
+            }
+        }
+        .footer-signup-text{
+            font-size: 18px;
+        }
+        .quick-link{
+            a{
+                font-size: 16px;
+                display: inline-block;
+                color: $secondary-b-color;
+            }
+        }
+        address{
+            font-size: 14px;
+        }
+        
+        #inputEmail4{
+            background-color: transparent;
+        }
+        .social-icons{
+            img{
+                width: 14px;
+            }
+        }
+    }
+    .footer-menu{
+        
+        &::after{
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: $secondary-bg-color;
+            margin: 1.2rem 0;
+        }
+    }
+    .footer-buttom-menu{
+        img{
+            width: 14px;
+            
+        }
+        a{
+            color: $secondary-b-color;
+        }
+    }
+}

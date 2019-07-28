@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- ============== CSS Files =================== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+
+</head>
+<body>
+        
+    <header class="position-fixed fixed-top shadow">
+            <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
+                    <ul class="nav flex-column hide-section-menu">
+                        <li class="nav-item">
+                            <div id="myForm">
+                                <form action="/echo/html/" id="popForm" method="get">
+                                    <!-- <div class="form-row">     -->
+                                        <div class="form-group">
+                                            <input type="email" class="form-control form-control-lg mw-100" id="inputEmail4" placeholder="Search...">
+                                        </div>
+                                        <div class="form-group d-flex justify-content-end">
+                                            <button  class="btn  btn-light btn-lg">Search</button>
+                                        </div>
+                                    <!-- </div> -->
+                                </form>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">COURSES</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">PAGES</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="#">FACULTY</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="#">REGISTER</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link " href="#">LOGIN</a>
+                        </li>
+                    </ul>
+                  </div>
+        <div class="container-fluid header-top-strip py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12 col-12">
+                        <ul class="nav">
+                            <li class="nav-item"><a href="" class="nav-link"><img src="assets/image/icons/phone-call.png" alt="icons">  9807701192</a></li>
+                            <li class="nav-item"><a href="" class="nav-link"><img src="assets/image/icons/envelope.png" alt="icons"> maurya.abhishek265@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-6 col-md-6 col-sm-0 " id="hide-section-log-reg">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item"><a href="" class="nav-link"><img src="assets/image/icons/man-user.png" alt="icons"> register</a></li>
+                            <li class="nav-item"><a href="" class="nav-link"><img src="assets/image/icons/login.png" alt="icons"> login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid header-main-strip">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-md-3 col-sm-6 col-6 pt-3">
+                        <ul class="nav nav-logo">
+                            <li class="nav-item py-1">
+                                <a href="#" class="nav-link"><img src="assets/image/icons/logo_8f3cec.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" data-placement="bottom" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button> -->
+                    <div class="col-xl-9 col-md-9 col-sm-6 col-6">
+                        <ul class="nav  hide-section-menu-icon" id="hide-section-menu-icon" >
+                            <li class="nav-item d-flex justify-content-end py-4">
+                                <a class="nav-link" id="navBtn" href="#"><img src="assets/image/icons/menu.png" alt="menu bar"></a>
+                            </li>
+                        </ul>
+                        <ul class="nav nav-fill nav-menu" id="hide-section-menu">
+                            <li class="nav-item py-4">
+                            <a class="nav-link" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item py-4">
+                            <a class="nav-link" href="#">COURSES</a>
+                            </li>
+                            <li class="nav-item py-4">
+                            <a class="nav-link" href="#">PAGES</a>
+                            </li>
+                            <li class="nav-item py-4">
+                            <a class="nav-link " href="#">FACULTY</a>
+                            </li>
+                            <li class="nav-item py-4">
+                            <a class="nav-link " href="#">ABOUT</a>
+                            </li>
+                            <li class="nav-item py-4">
+                            <a class="nav-link " href="#">BLOG</a>
+                            </li>
+                            <li class="nav-item py-4">
+                            <a class="nav-link " href="#">CONTACT</a>
+                            </li>
+                            <li class="nav-item py-4" id="head_search">
+                            <a class="nav-link "  href="#"><img src="assets/image/icons/search.png" alt="icons"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="myForm" style="display: none;">
+                        <form action="/echo/html/" id="popForm" method="get">
+                            <div class="form-row">
+                                <div class="form-group col-md-10 col-lg-10 col-xl-10 col-sm-10 col-xs-10 col-10">
+                                    <input type="email" class="form-control form-control-lg" id="inputEmail4" placeholder="Search...">
+                                </div>
+                                <div class="form-group col-md-2 col-lg-2 col-xl-2 col-sm-2 col-xs-2 col-2">
+                                    <button  class="btn btn-light btn-lg">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+            </div>
+        </div>
+    </header>
+    <main class="">
+        <div class="container-fluid banner-section">
+            <div class="banner">
+                <img src="assets/image/banner.jpg" alt="banner">
+                <div class="banner-caption ">
+                    <div class="banner-caption-heading">
+                        <h1>Learn Excilence <br> in Teaching</h1>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="banner-caption-text">
+                        <p>"Love exciting and new. Come abroad were expecting. love life's sweetest reward. Let it flow it floats back  to you."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container card-panel" id="card-panel">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-12 mt-4">
+                    <div class="card" style="width: 100%">
+                        <div class="card-body">
+                            <h6 class="card-subtitle subtitle-top mb-2 text-muted">Event <img src="assets/image/icons/bull-horn-announcer.png" alt=""></h6>
+                            <h5 class="card-title">08 MAR 2017</h5>
+                            <h6 class="card-subtitle subtitle-bottom mb-2 text-muted">SUMMER CAMPING</h6>
+                            <div class="divider"></div>
+                            <p class="card-text">Time Start 9:00 AM</p>
+                            <a href="#" class="card-link btn btn-link ">READ MORE</a>
+                            <!-- <a href="#" class="card-link">Another link</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-12 mt-4">
+                    <div class="card" style="width: 100%">
+                        <div class="card-body">
+                            <h6 class="card-subtitle subtitle-top mb-2 text-muted">Event <img src="assets/image/icons/bull-horn-announcer.png" alt=""></h6>
+                            <h5 class="card-title">08 MAR 2017</h5>
+                            <h6 class="card-subtitle subtitle-bottom mb-2 text-muted">SUMMER CAMPING</h6>
+                            <div class="divider"></div>
+                            <p class="card-text">Time Start 9:00 AM</p>
+                            <a href="#" class="card-link btn btn-link">READ MORE</a>
+                            <!-- <a href="#" class="card-link">Another link</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-12 mt-4">
+                    <div class="card" style="width: 100%">
+                        <div class="card-body card-body-l">
+                            <h5 class="card-title card-title-l">Become a Student?</h5>
+                            <a href="#" class="card-link card-link-l1 py-3 btn-block btn " data-toggle="modal" data-target="#admissionModal">ADMISSION NOW</a>
+                            <a href="#" class="card-link card-link-l2 btn-block btn" data-toggle="modal" data-target="#regTableModal">Registered Student</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================================== ABOUT LMS SECTION =============================== -->
+        <div class="container about-section mb-5">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12 col-12">
+                    <article class="px-4">
+                        <h2 class="mb-4">About LMS</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, optio? Recusandae deleniti expedita beatae, corporis est suscipit sunt eum, culpa amet aliquid ratione nisi vel eaque delectus aut, tempora molestias.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, optio? Recusandae deleniti expedita beatae, corporis est suscipit sunt eum, culpa amet aliquid ratione nisi vel eaque delectus aut, tempora molestias.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, optio? Recusandae deleniti expedita beatae, corporis est suscipit sunt eum.</p>
+                        <a href="#" class="card-link btn my-5">READ MORE</a>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12 col-12">
+                    <img src="assets/image/about-img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- ============================ Intrest Section ========================================= -->
+        <div class="interest-section">
+            <div class="container">
+                <div class="row intrest">
+                    <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12 col-xs-12 col-12">
+                        <h2 class="my-5">Which One You Interested?</h2>
+                    </div>
+                </div>
+                <div class="row intrest">
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-12">
+                        <div class=" card mt-5">
+                            <img src="assets/image/icons/html-5-logo.png" alt="html">
+                            <h3>HTML</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-12">
+                        <div class=" card mt-5">
+                            <img src="assets/image/icons/photoshop.png" alt="html">
+                            <h3>Photoshop</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-12">
+                        <div class=" card mt-5">
+                            <img src="assets/image/icons/android-character-symbol.png" alt="html">
+                            <h3>Android</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-12">
+                        <div class=" card mt-5">
+                            <img src="assets/image/icons/css-3.png" alt="html">
+                            <h3>CSS</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-12">
+                        <div class=" card mt-5">
+                            <img src="assets/image/icons/js-file.png" alt="html">
+                            <h3>JavaScript</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-12">
+                        <div class=" card mt-5">
+                            <img src="assets/image/icons/php.png" alt="html">
+                            <h3>PHP</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================================= Letest Course Section =========================== -->
+        <div class="container">
+            <div class="row latest-course-heading ">
+                <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12 col-xs-12 col-12">
+                    <h2>Latest Course</h2>
+                </div>
+            </div>
+            <div class="row latest-courses mb-5">
+                <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-12 mt-5">
+                    <div class="card">
+                        <img src="assets/image/course-1.jpg" alt="Course 1 image" class="card-img-top">
+                        <div class="card-body py-4 px-5">
+                            <div class="row card-head">
+                                <div class="col-7">
+                                    <p><img src="assets/image/icons/folder.png" alt="icon"> Business</p>
+                                    <h4>Fashion Design</h4>
+                                </div>
+                                <div class="col-5 price">
+                                    <h2>$159.00</h2>
+                                    <p><img class="reating" src="assets/image/star-rating.png" alt=""></p>
+                                </div>
+                            </div>
+                            <p class="card-content mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Odit eaque earum id qui magni iusto cumque pariatur. 
+                                Unde doloribus hic quae doloremque voluptates, saepe vitae accusantium 
+                                consectetur deserunt, nobis (.....)</p>
+                            <button type="button" class="btn btn-lg py-3 px-4 mt-5">APPLY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-12 mt-5">
+                    <div class="card">
+                        <img src="assets/image/course-2.jpg" alt="Course 1 image" class="card-img-top">
+                        <div class="card-body py-4 px-5">
+                            <div class="row card-head">
+                                <div class="col-7">
+                                    <p><img src="assets/image/icons/folder.png" alt="icon"> Computer Science</p>
+                                    <h4>Mathematics</h4>
+                                </div>
+                                <div class="col-5 price">
+                                    <h2>$159.00</h2>
+                                    <p><img class="reating" src="assets/image/star-rating.png" alt=""></p>
+                                </div>
+                            </div>
+                            <p class="card-content mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Odit eaque earum id qui magni iusto cumque pariatur. 
+                                Unde doloribus hic quae doloremque voluptates, saepe vitae accusantium 
+                                consectetur deserunt, nobis (.....)</p>
+                            <button type="button" class="btn btn-lg py-3 px-4 mt-5">APPLY NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-12 mt-5">
+                    <div class="card">
+                        <img src="assets/image/course-3.jpg" alt="Course 1 image" class="card-img-top">
+                        <div class="card-body py-4 px-5">
+                            <div class="row card-head">
+                                <div class="col-6">
+                                    <p><img src="assets/image/icons/folder.png" alt="icon"> Natural Science</p>
+                                    <h4>Marketing</h4>
+                                </div>
+                                <div class="col-6 price">
+                                    <h2>FREE</h2>
+                                    <p><img class="reating" src="assets/image/star-rating.png" alt=""></p>
+                                </div>
+                            </div>
+                            <p class="card-content mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Odit eaque earum id qui magni iusto cumque pariatur. 
+                                Unde doloribus hic quae doloremque voluptates, saepe vitae accusantium 
+                                consectetur deserunt, nobis (.....)</p>
+                            <button type="button" class="btn btn-lg py-3 px-4 mt-5">APPLY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ======================================== Our  Achivment Section========================================== -->
+        <div class="our-achivment-section py-5">
+            <div class="container py-5">
+                <h2 class="our-achivment-heading">Our Achivments</h2>
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-xl-3 col-sm-6 col-xs-6 col-6">
+                        <div class="row achivment-card">
+                            <div class="col-4">
+                                <img src="assets/image/icons/active_user.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h2>6079</h2>
+                                <p>Active Student</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3 col-sm-6 col-xs-6 col-6">
+                        <div class="row achivment-card">
+                            <div class="col-4">
+                                <img src="assets/image/icons/award.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h2>1039</h2>
+                                <p>Award Winning</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3 col-sm-6 col-xs-6 col-6">
+                        <div class="row achivment-card">
+                            <div class="col-4">
+                                <img src="assets/image/icons/model.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h2>6092</h2>
+                                <p>Model Test</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3 col-sm-6 col-xs-6 col-6">
+                        <div class="row achivment-card">
+                            <div class="col-4">
+                                <img src="assets/image/icons/skilled.png" alt="">
+                            </div>
+                            <div class="col-8">
+                                <h2>1032</h2>
+                                <p>Skilled Faculty</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row achivment-text">
+                    <div class="col-md-5 col-sm-12 col-xl-5 col-lg-5 col-12">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eos laboriosam repellat similique nostrum quidem nesciunt, aspernatur fuga. Incidunt voluptatum atque consequuntur. Dignissimos, architecto inventore non accusantium esse accusamus dolorem!</p>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xl-12 col-lg-12 col-12">
+                        <img src="assets/image/skill-development.jpg" alt="skil-devlopment">
+                        <h2 >Skill Devlopment</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ Live Classes ================================= -->
+        <div class="live-class-section py-5">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12 col-12 live-class p-5">
+                        <h6>Welcome to</h6>
+                        <h2 class="mb-5">Live Class</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia fugiat optio excepturi quibusdam commodi, maxime aspernatur dolor explicabo iure ratione cupiditate quas ipsam pariatur facere unde? Repellendus odit omnis inventore.</p>
+                        <button class="btn btn-lg py-4 px-5" >VIEW ALL CLASSES</button>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12 col-12 live-class live-class-carousel">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img class="d-block w-100" src="assets/image/live-class.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                <img class="d-block w-100" src="assets/image/live-class.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                <img class="d-block w-100" src="assets/image/live-class.jpg" alt="Third slide">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12 col-12 d-flex justify-content-end">
+                                <!-- <span>1</span> / <span>10</span> -->
+                            </div>
+                            <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12 col-12 d-flex justify-content-end">
+                                <a href="#carouselExampleIndicators" class="btn mr-1"  role="button" data-slide="prev">
+                                    <<
+                                </a>
+    
+                                <a href="#carouselExampleIndicators" class="btn mr-1" role="button" data-slide="next">
+                                    >>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           </div>
+        
+        <!-- ================================== Main Image Section ============================ -->
+        <div class="container-full">
+            <div class="collum">
+                <div class="row-full">
+                    <div class="collum">
+                        <img src="assets/image/img-2.jpg" alt="">
+                    </div>
+                    <div class="collum">
+                        <img src="assets/image/img-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row-full">
+                    <img src="assets/image/img-3.jpg" alt="">
+                </div>
+            </div>
+            <div class="collum">
+                <img src="assets/image/img-4.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- =============================== News Portal ======================== -->
+        <div class="container news-section py-5 mb-5">
+            <div class="row latest-course-heading">
+                <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12 col-xs-12 col-12 mt-5">
+                    <h2>News Portal</h2>
+                </div>
+            </div>
+            <div class="row latest-courses news-portal">
+                <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-12 my-5">
+                    <div class="card">
+                        <img src="assets/image/news-1.jpg" alt="News image" class="card-img-top">
+                        <div class="card-body">
+                            <label>July 25, 2019</label>
+                            <p class="card-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Odit eaque earum id qui magni iusto cumque pariatur. 
+                                Unde doloribus hic quae doloremque voluptates, saepe vitae accusantium 
+                                consectetur deserunt, nobis (.....)</p>
+
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-12 my-5">
+                    <div class="card">
+                        <img src="assets/image/news-2.jpg" alt="News image" class="card-img-top">
+                        <div class="card-body">
+                            <label>July 25, 2019</label>
+                            <p class="card-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Odit eaque earum id qui magni iusto cumque pariatur. 
+                                Unde doloribus hic quae doloremque voluptates, saepe vitae accusantium 
+                                consectetur deserunt, nobis (.....)</p>
+
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-12 my-5">
+                    <div class="card">
+                        <img src="assets/image/news-3.jpg" alt="News image" class="card-img-top">
+                        <div class="card-body">
+                            <label>July 25, 2019</label>
+                            <p class="card-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Odit eaque earum id qui magni iusto cumque pariatur. 
+                                Unde doloribus hic quae doloremque voluptates, saepe vitae accusantium 
+                                consectetur deserunt, nobis (.....)</p>
+
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-lg mt-5 py-4 px-5">VIEW ALL POST</button>
+
+        </div>
+
+                      <!-- =========================== Admission Modal ========================== -->
+                      
+                      <div class="modal fade " id="admissionModal" tabindex="-1" role="dialog" aria-labelledby="admissionModalTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                          <div class="modal-content ">
+                            <div class="modal-header">
+                              <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                            <h3 class="modal-title mb-4" id="admissionModalTitle" style="text-align: center;">Admission Registration Form</h3>
+                            <form action="#" method="GET">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                        <input type="text" class="form-control form-control-lg  " id="fname" placeholder="First name">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                        <input type="text" class="form-control form-control-lg " id="lname" placeholder="Last name">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                        <input type="email" class="form-control form-control-lg " id="email" placeholder="Email">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                        <input type="text" class="form-control form-control-lg " id="phoneNumber" maxlength="10" pattern="[789][0-9]{9}" placeholder="Phone number">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <select id="contary" class="form-control form-control-lg custom-select custom-select-lg ">
+                                                <option selected disabled value="">Nationality</option>
+                                                <option value="India">India</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <select id="state" class="form-control form-control-lg ">
+                                                <option selected disabled value="">State</option>
+                                                <option value="Delhi">Delhi</option>
+                                                <option value="Uttar Pardesh">Uttar Pardesh</option>
+                                                <option value="Gujrat">Gujrat</option>
+                                            </select>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="form-row">
+                                  
+                                        <div class="form-group col-md-6">
+                                            <select id="city" class="form-control form-control-lg ">
+                                                <option selected disabled value="">City</option>
+                                                <option value="Noida">Noida</option>
+                                                <option value="Greater Noida">Greater Noida</option>
+                                                <option value="Delhi">Delhi</option>
+                                            </select>
+                                        </div>
+                                       
+                                        <div class="form-group col-md-6">
+                                        <input type="text" class="form-control form-control-lg " id="pin" placeholder="Pin code">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-12">
+                                            <textarea name="" id="address" placeholder="Address" cols="30" rows="2" class="form-control form-control-lg "></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button type="button" id="btn-submit"   class="btn btn-lg btn-center mt-5 mb-4 py-4 px-5">Save changes</button>
+                                    </div>
+                                             
+                            </div>
+                        </form>  
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- =========================== Register student table Modal ========================== -->
+
+                      <div class="modal fade " id="regTableModal" tabindex="-1" role="dialog" aria-labelledby="regTableModalTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-lg  modal-dialog-centered" role="document">
+                          <div class="modal-content ">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                            <h3 class="modal-title mb-4" id="regTableModalTitle" style="text-align: center;">Register Student</h3>
+                            
+                                        <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Email</th>
+                                                        <th scope="col">Mobile</th>
+                                                        <th scope="col">Address</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="table-hover" id="tbody">
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                
+                        <h2 class="error my-5" id="no-list" style="text-align: center;">No student Register till now.</h2>
+                        </div>
+                      </div>
+
+    </main>
+    <footer class="container-fluid mt-5 py-5">
+        <div class="container py-5">
+            <div class="row ">
+                <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
+                    <h2 class="footer-signup-text">Sign Up <br>for Our Newssletter</h2>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
+                    <form action="#" method="get">
+                        <div class="row justify-content-end">
+                            <div class="form-group col-md-9  col-lg-9 col-xl-9 col-sm-9 col-xs-9 pr-0">
+                                <input type="email" class="form-control rounded-0 p-3 form-control-lg" id="inputEmail4" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group col-md-3 col-lg-3 col-xl-3 col-sm-3 col-xs-3">
+                                <button  class="btn btn-light rounded-0 p-3 btn-lg">SUBMIT NOW</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row my-5  social-icons">
+                        <div class="col-md-12 col-lg-12 col-xl-12 col-sm-12 col-xs-12">
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><img src="assets/image/icons/facebook-logo (2).png" alt=""></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><img src="assets/image/icons/twitter (1).png" alt=""></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><img src="assets/image/icons/linkedin-logo (1).png" alt=""></a>
+                                </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><img src="assets/image/icons/google-plus (1).png" alt=""></a>
+                                </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><img src="assets/image/icons/youtube (1).png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer-menu">
+                <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-md-12 mt-3">
+                                    <address>
+                                        <h3>Address:</h3>
+                                        73724 Route 30 <br>
+                                        South Richmond Hill, NY 11419
+                                    </address>
+                                </div>
+                                <div class="col-md-12 mt-3">
+                                    <address>
+                                        <h3>Tel: <span>(603)-677-3400</span></h3>
+                                        <h3>Email: <span>maurya265@gmail.com</span></h3>
+                                        <h3>Web: <span>Learnxpert.com</span></h3>
+                                    </address>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12">
+                            <ul class="nav flex-column quick-link pt-2">
+                                <li class="nav-item">
+                                    <h3>Quick Links:</h3>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pl-0" href="#">Calender</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pl-0" href="#">Map & Direction</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pl-0" href="#">Our News</a>
+                                </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pl-0" href="#">University Courses</a>
+                                </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link pl-0" href="#">Coutact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12 mt-1">
+                    <img src="assets/image/map.png" alt="Map image">
+                </div>
+            </div>  
+            <div class="row footer-buttom-menu">
+                <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12 col-12 pl-0">
+                        <ul class="nav">
+                            <li class="nav-item ">
+                                <a class="nav-link pl-0" href="#"><img src="assets/image/icons/group-of-users-silhouette.png" alt=""> Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="#"><img src="assets/image/icons/bull-horn-announcer1.png" alt=""> Join Us</a>
+                            </li>
+       
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="#"><img src="assets/image/icons/sent-mail.png" alt=""> Invite Us</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-6 col-sm-12 col-xs-12 col-12 pr-0">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                                COPYRIGHT 2017 LMS EDUCATION. ALL RIGHTS RESERVED
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============= JS Files ===================== -->
+    <script src="assets/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
